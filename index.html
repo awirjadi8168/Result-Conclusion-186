@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conclusion</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f8fc;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* Main Container */
+    .methodology-container {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: #f1f7fe;
+      padding: 80px 40px 40px 40px;
+      border-radius: 40px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+    /* Absolute Methodology Title */
+    .methodology-title {
+      position: absolute;
+      top: 15px;
+      left: 20px;
+      background-color: #00264A;
+      color: white;
+      padding: 10px 30px;
+      border-radius: 20px;
+      margin: 0;
+      font-size: 24px;
+    }
+
+    /* Container for placeholder + content box */
+    .step-wrapper {
+      display: flex;
+      margin-bottom: 30px;
+    }
+
+    /* Generic Image Placeholder */
+    .placeholder-block {
+      flex: 0 0 100px;
+      height: 100px; /* Fixed height to keep it a square on desktop */
+      background-color: #ffffff;
+      border: 1px solid #dcdcdc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      margin-right: 20px;
+      padding: 10px;
+      box-sizing: border-box;
+      overflow: hidden; /* Prevents large images from spilling out */
+    }
+
+    /* FIX: Image scaling inside the placeholder */
+    .placeholder-block img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* Ensures the whole image fits without cropping */
+    }
+
+    /* The main content box with border and rounded corners */
+    .content-box {
+      flex: 1;
+      background-color: white;
+      border: 3px navy;
+      border-radius: 30px;
+      padding: 20px 20px 20px 60px;
+      position: relative;
+    }
+
+    /* Inset numbered circles */
+    .step-number-inset {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: black;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    /* Heading styling */
+    .content-box h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: black;
+      font-weight: bold;
+    }
+
+    /* Body text styling */
+    .content-box p {
+      margin: 0;
+      color: #333;
+      line-height: 1.5;
+      font-size: 14px;
+      text-align: justify;
+    }
+
+    /* =========================================
+       MOBILE RESPONSIVENESS (iPhones, etc.)
+       ========================================= */
+    @media (max-width: 768px) {
+      body {
+        padding: 10px; 
+      }
+      
+      .methodology-container {
+        padding: 70px 15px 25px 15px; 
+        border-radius: 20px; 
+      }
+
+      .methodology-title {
+        font-size: 18px; 
+        padding: 8px 20px;
+        left: 15px;
+      }
+
+      .step-wrapper {
+        flex-direction: column; 
+        margin-bottom: 25px;
+      }
+
+      .placeholder-block {
+        width: 100%; 
+        height: 120px; 
+        margin-right: 0;
+        margin-bottom: 15px; 
+        flex: none;
+      }
+
+      .content-box {
+        padding: 20px 15px 20px 55px; 
+        border-radius: 20px;
+      }
+
+      .step-number-inset {
+        width: 35px; 
+        height: 35px;
+        font-size: 16px;
+        top: 15px;
+        left: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="methodology-container">
+    <h1 class="methodology-title">Additional Study Result and Conclusion</h1>
+
+    <div class="step-wrapper">
+      <div class="placeholder-block">
+        <img src="laser.png" alt="Laser">
+      </div>
+      <div class="content-box">
+        <div class="step-number-inset">1</div>
+        <h2>Femtosecond Lasering</h2>
+        <p>The laser was polarized to control the growth direction of LIPSS and operated under the wavelength of 1040 nm, and a pulse of 332 fs. The optimal laser power was set to 0.05 W. Process is in Oxygen environment to reduce graphite formation.</p>
+      </div>
+    </div>
+
+    <div class="step-wrapper">
+      <div class="placeholder-block">
+        <img src="beaker.png" alt="Acid Bath">
+      </div>
+      <div class="content-box">
+        <div class="step-number-inset">2</div>
+        <h2>Acid Bath Graphite Removal</h2>
+        <p>The cleaning solution was prepared by sequentially adding 7mL of 68% nitric acid (HNO<sub>3</sub>), 98% sulfuric acid (H<sub>2</sub>SO<sub>4</sub>), and 70% perchloric acid (HClO<sub>4</sub>). The flask is heated up to 80°C, 190°C, and 210°C to remove the graphite from the diamond. Removing graphite is important as graphite can easily slide against one another, making the metal layer sputtered on top of it easily flake off under mechanical stress.</p>
+      </div>
+    </div>
+
+    <div class="step-wrapper">
+      <div class="placeholder-block">
+        <img src="droplet.png" alt="Wettability">
+      </div>
+      <div class="content-box">
+        <div class="step-number-inset">3</div>
+        <h2>Water Droplet Wettability Test</h2>
+        <p>10 µL water droplet is dropped onto the diamond. The contact angle between the droplet and the diamond surface is then analyzed through Image J. The smaller the contact angle, the better the surface hydrophilicity.</p>
+      </div>
+    </div>
+
+    <div class="step-wrapper">
+      <div class="placeholder-block">
+        <img src="sem.png" alt="Characterization">
+      </div>
+      <div class="content-box">
+        <div class="step-number-inset">4</div>
+        <h2>Material Characterization (SEM, Raman, AFM, FIB)</h2>
+        <p>LowVac environment to reduce charging and drift during SEM imaging. Raman spectroscopy to accurately observe the pure diamond and graphite composition. AFM and FIB to map and measure the overall LIPSS height and formation.</p>
+      </div>
+    </div>
+
+    <div class="step-wrapper">
+      <div class="placeholder-block">
+        <img src="sputter.png" alt="Sputtering">
+      </div>
+      <div class="content-box">
+        <div class="step-number-inset">5</div>
+        <h2>Titanium Tungsten Sputtering and Annealing</h2>
+        <p>Titanium-Tungsten is sputtered onto the diamond substrate with a target thickness of ~800 nm. Upon completion, the sputtered diamond is then annealed at 400°C in a vacuum environment to prevent oxidation during the formation of Titanium Carbide.</p>
+      </div>
+    </div>
+
+    <div class="step-wrapper">
+      <div class="placeholder-block">
+        <img src="scratch.png" alt="Testing">
+      </div>
+      <div class="content-box">
+        <div class="step-number-inset">6</div>
+        <h2>Nano Scratch and Identation Testing</h2>
+        <p>Diamond with an annealed layer of Titanium-Tungsten will be placed inside the Hysitron TI 990 to undergo both the nano scratch and nano indentation test. A total of 50 different indentations will be made on two areas of the diamond (the flat diamond surface and the diamond surface with LIPSS). The amount of force used for each indentation is 10.2 mN. Upon completing all 50 indentations, the result will be plotted in a hardness vs contact depth plot. To determine whether there is an improvement in adhesion, we will need to verify the critical failure point. A better adhesion will show a shallower and more consistent maximum depth. To verify the result that we got, we perform a nano scratch test around the same area.   </p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
