@@ -39,37 +39,37 @@
     /* Container for placeholder + content box */
     .step-wrapper {
       display: flex;
-      margin-bottom: 30px;
+      flex-direction: column; /* Stack vertically for all screen sizes */
+      margin-bottom: 40px;
     }
 
-    /* Generic Image Placeholder */
+    /* Generic Image Placeholder - Now acts as a top banner */
     .placeholder-block {
-      flex: 0 0 100px;
-      height: 100px; /* Fixed height to keep it a square on desktop */
+      width: 100%;
+      height: 200px; /* Taller height for top placement */
       background-color: #ffffff;
       border: 1px solid #dcdcdc;
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: 10px;
-      margin-right: 20px;
+      border-radius: 20px;
+      margin-bottom: 15px; /* Space between image and paragraph */
       padding: 10px;
       box-sizing: border-box;
-      overflow: hidden; /* Prevents large images from spilling out */
+      overflow: hidden; 
     }
 
-    /* FIX: Image scaling inside the placeholder */
+    /* Image scaling inside the placeholder */
     .placeholder-block img {
       width: 100%;
       height: 100%;
-      object-fit: contain; /* Ensures the whole image fits without cropping */
+      object-fit: contain; 
     }
 
     /* The main content box with border and rounded corners */
     .content-box {
-      flex: 1;
       background-color: white;
-      border: 3px navy;
+      border: 3px solid #00264A; /* Using the navy hex for consistency */
       border-radius: 30px;
       padding: 20px 20px 20px 60px;
       position: relative;
@@ -129,17 +129,8 @@
         left: 15px;
       }
 
-      .step-wrapper {
-        flex-direction: column; 
-        margin-bottom: 25px;
-      }
-
       .placeholder-block {
-        width: 100%; 
-        height: 120px; 
-        margin-right: 0;
-        margin-bottom: 15px; 
-        flex: none;
+        height: 150px; /* Slightly shorter on mobile */
       }
 
       .content-box {
@@ -224,7 +215,7 @@
       <div class="content-box">
         <div class="step-number-inset">6</div>
         <h2>Nano Scratch and Identation Testing</h2>
-        <p>Diamond with an annealed layer of Titanium-Tungsten will be placed inside the Hysitron TI 990 to undergo both the nano scratch and nano indentation test. A total of 50 different indentations will be made on two areas of the diamond (the flat diamond surface and the diamond surface with LIPSS). The amount of force used for each indentation is 10.2 mN. Upon completing all 50 indentations, the result will be plotted in a hardness vs contact depth plot. To determine whether there is an improvement in adhesion, we will need to verify the critical failure point. A better adhesion will show a shallower and more consistent maximum depth. To verify the result that we got, we perform a nano scratch test around the same area.   </p>
+        <p>Diamond with an annealed layer of Titanium-Tungsten will be placed inside the Hysitron TI 990 to undergo both the nano scratch and nano indentation test. A total of 50 different indentations will be made on two areas of the diamond (the flat diamond surface and the diamond surface with LIPSS). The amount of force used for each indentation is 10.2 mN. Upon completing all 50 indentations, the result will be plotted in a hardness vs contact depth plot. To determine whether there is an improvement in adhesion, we will need to verify the critical failure point. A better adhesion will show a shallower and more consistent maximum depth. To verify the result that we got, we perform a nano scratch test around the same area.</p>
       </div>
     </div>
 
